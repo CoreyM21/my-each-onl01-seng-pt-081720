@@ -1,7 +1,9 @@
-def my_each(collection)
- 
-  yield(collection do [i])
-  puts i
-end
+def my_each(words)
+  count = 0
+  while count < words.length
+    yield words[count]
+    count += 1
+  end
+  words
 end
 
